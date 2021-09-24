@@ -10,4 +10,5 @@ button {
 button:hover {
   background-color: #87CEFA;
   color: white;
+  line-height: 2
 }
