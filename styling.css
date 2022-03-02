@@ -2,7 +2,7 @@ body {
   padding:40px 0;
   font-family: 'bebas', sans-serif;
   background-color:#fff;
-  .textcontainer {padding:40px 0;text-align:center;}
+  .textcontainer {padding:40px 0; text-align:center}
   .particletext {
      text-align:center;
      font-size:48px;
@@ -31,9 +31,22 @@ body {
          }
       }
      } 
-  }
- }
-   
+   }
+
+ @keyframes hearts {
+   0% {
+      opacity: 0;
+      transform:translate(0, 0%) rotate(45deg);
+   }
+   20% { //show and hint at moving
+      opacity: 0.8;
+      transform:translate(0, -20%) rotate(45deg);
+   }
+   100% {
+      opacity: 0;
+      transform:translate(0, -1000%) rotate(45deg); //Big hearts move faster
+   }
+}
 button {
   background-color: #87CEEB;
   color: navy;
